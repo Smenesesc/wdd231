@@ -8,7 +8,7 @@
     <title>Santiago Meneses</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/styles.css">
-    <script defer src="script.js"></script>
+    <script defer src="scripts/script.js"></script>
 </head>
 <body>
     <header>
@@ -45,5 +45,12 @@
         <p>&copy; <span id="currentyear"></span> Santiago Meneses, Costa Rica</p>
         <p id="lastModified"></p>
     </footer>
+
+    <script>
+        // Update the current year
+        document.getElementById("currentyear").textContent = new Date().getFullYear();
+        // Update last modified date
+        document.getElementById("lastModified").textContent = "Last modified: " + document.lastModified;
+    </script>
 </body>
 </html>
