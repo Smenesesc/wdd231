@@ -1,23 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Santiago Meneses's personal page.">
     <meta name="author" content="Santiago Meneses">
-    <title>Santiago Meneses</title>
-    
-    <meta property="og:title" content="Santiago Meneses">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://your-image-url.com/image.jpg"> 
-    <meta property="og:url" content="https://your-website-url.com">
-
+    <title>Home Page-Santiago Meneses</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="styles/styles.css">
-    <script defer src="scripts/script.js"></script>
+
+    <link rel="stylesheet" href="chamber/styles/styles.css">
+
+    <script defer src="chamber/scripts/script1.js"></script>
 </head>
+
 <body>
     <header>
         <h1>Santiago Meneses</h1>
@@ -34,21 +31,19 @@
     <main>
         <section>
             <h2>About Me</h2>
-            <p>My name is Santiago Meneses, and I am from Costa Rica. Welcome to my personal website!</p>
+            <p>My name is Santiago Meneses, and I am from Costa Rica. I am a Software development student and this is my personal website!</p>
         </section>
 
         <section>
             <h2>My Skills</h2>
-            <p>I have experience in web development, computer programming, and software engineering.</p>
+            <p>I have experience as an SAP TM consultant, computer programming, and software engineering.</p>
         </section>
 
         <section>
             <h2>Courses I Have Taken</h2>
-
             <button class="filter-btn" data-filter="completed">Completed Courses</button>
             <button class="filter-btn" data-filter="incomplete">Incomplete Courses</button>
             <button class="filter-btn" data-filter="all">All Courses</button>
-
             <div id="coursesList"></div>
             <div id="totalCredits"></div>
         </section>
@@ -64,4 +59,5 @@
         document.getElementById("lastModified").textContent = "Last modified: " + document.lastModified;
     </script>
 </body>
+
 </html>

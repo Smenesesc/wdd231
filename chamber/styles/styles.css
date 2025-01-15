@@ -120,3 +120,41 @@ footer p {
         display: flex;
     }
 }
+/* Course Card Styles */
+.course-card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.course-card.completed {
+    background-color: #e0ffe0; /* Light green for completed courses */
+    border-color: #4caf50;
+}
+
+.course-card h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.course-card p {
+    color: #555;
+}
+
+/* Button Styles for filtering */
+.filter-btn {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+.filter-btn:hover {
+    background-color: #ff6347;
+}
