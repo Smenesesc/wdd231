@@ -69,6 +69,44 @@ footer p {
     margin: 5px 0;
 }
 
+/* Grid and List View styles */
+#directory-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#directory-list.grid-view .member-card {
+    width: calc(33.333% - 20px);
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#directory-list.list-view .member-card {
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.member-card img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.member-card h3 {
+    margin: 0 0 10px;
+}
+
+.member-card p {
+    margin: 5px 0;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     nav ul {

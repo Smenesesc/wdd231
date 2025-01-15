@@ -1,137 +1,104 @@
 // Set the current year in the footer
-document.getElementById("currentyear").textContent = new Date().getFullYear();
+document.getElementById("year").textContent = new Date().getFullYear();
 
 // Set the last modified date of the document in the footer
-document.getElementById("lastModified").textContent = `Last modified on: ${document.lastModified}`;
+document.getElementById("last-modified").textContent = document.lastModified;
 
-// Courses array
-const courses = [
+// Members data
+const members = [
     {
-        subject: 'CSE',
-        number: 110,
-        title: 'Introduction to Programming',
-        credits: 2,
-        certificate: 'Web and Computer Programming',
-        description: 'This course will introduce students to programming. It will introduce the building blocks of programming languages (variables, decisions, calculations, loops, array, and input/output) and use them to solve problems.',
-        technology: ['Python'],
-        completed: true
+        "name": "Westernacher Consulting",
+        "address": "Escazu Corporate Center",
+        "phone": "(123) 456-7890",
+        "website": "https://westernacher.com",
+        "image": "images/westernacher.png",
+        "membership_level": "1"
     },
     {
-        subject: 'WDD',
-        number: 130,
-        title: 'Web Fundamentals',
-        credits: 2,
-        certificate: 'Web and Computer Programming',
-        description: 'This course introduces students to the World Wide Web and to careers in web site design and development. The course is hands on with students actually participating in simple web designs and programming. It is anticipated that students who complete this course will understand the fields of web design and development and will have a good idea if they want to pursue this degree as a major.',
-        technology: ['HTML', 'CSS'],
-        completed: true
+        "name": "Amazon",
+        "address": "410 Terry Ave N, Seattle, WA 98109",
+        "phone": "(888) 280-4331",
+        "website": "https://amazon.com",
+        "image": "images/amazon.jpeg",
+        "membership_level": "2"
     },
     {
-        subject: 'CSE',
-        number: 111,
-        title: 'Programming with Functions',
-        credits: 2,
-        certificate: 'Web and Computer Programming',
-        description: 'CSE 111 students become more organized, efficient, and powerful computer programmers by learning to research and call functions written by others; to write, call, debug, and test their own functions; and to handle errors within functions. CSE 111 students write programs with functions to solve problems in many disciplines, including business, physical science, human performance, and humanities.',
-        technology: ['Python'],
-        completed: true
+        "name": "Intel",
+        "address": "2200 Mission College Blvd, Santa Clara, CA 95054",
+        "phone": "(408) 765-8080",
+        "website": "https://intel.com",
+        "image": "images/intel.png",
+        "membership_level": "3"
     },
     {
-        subject: 'CSE',
-        number: 210,
-        title: 'Programming with Classes',
-        credits: 2,
-        certificate: 'Web and Computer Programming',
-        description: 'This course will introduce the notion of classes and objects. It will present encapsulation at a conceptual level. It will also work with inheritance and polymorphism.',
-        technology: ['C#'],
-        completed: false
+        "name": "DXC Technology",
+        "address": "1775 Tysons Blvd, Tysons, VA 22102",
+        "phone": "(800) 927-0303",
+        "website": "https://dxc.com",
+        "image": "images/dxc.png",
+        "membership_level": "3"
     },
     {
-        subject: 'WDD',
-        number: 131,
-        title: 'Dynamic Web Fundamentals',
-        credits: 2,
-        certificate: 'Web and Computer Programming',
-        description: 'This course builds on prior experience in Web Fundamentals and programming. Students will learn to create dynamic websites that use JavaScript to respond to events, update content, and create responsive user experiences.',
-        technology: ['HTML', 'CSS', 'JavaScript'],
-        completed: false
+        "name": "Accenture",
+        "address": "1 Grand Canal Square, Dublin, Ireland",
+        "phone": "(800) 336-1221",
+        "website": "https://accenture.com",
+        "image": "images/accenture.png",
+        "membership_level": "2"
     },
     {
-        subject: 'WDD',
-        number: 231,
-        title: 'Frontend Web Development I',
-        credits: 2,
-        certificate: 'Web and Computer Programming',
-        description: 'This course builds on prior experience with Dynamic Web Fundamentals and programming. Students will focus on user experience, accessibility, compliance, performance optimization, and basic API usage.',
-        technology: ['HTML', 'CSS', 'JavaScript'],
-        completed: false
+        "name": "IBM",
+        "address": "1 New Orchard Rd, Armonk, NY 10504",
+        "phone": "(800) 426-4968",
+        "website": "https://ibm.com",
+        "image": "images/IBM.PNG",
+        "membership_level": "1"
+    },
+    {
+        "name": "3M",
+        "address": "3M Center, St. Paul, MN 55144",
+        "phone": "(800) 364-3577",
+        "website": "https://3m.com",
+        "image": "images/3M.PNG",
+        "membership_level": "2"
     }
 ];
 
-// Function to display courses dynamically
-function displayCourses(coursesList) {
-    const courseContainer = document.getElementById('coursesList');
-    courseContainer.innerHTML = ''; // Clear existing courses
+// Function to display members dynamically
+function displayMembers(membersList) {
+    const memberContainer = document.getElementById('directory-list');
+    memberContainer.innerHTML = ''; // Clear existing members
 
-    let totalCredits = 0;
-
-    coursesList.forEach(course => {
-        const courseCard = document.createElement('div');
-        courseCard.classList.add('course');
+    membersList.forEach(member => {
+        const memberCard = document.createElement('div');
+        memberCard.classList.add('member-card');
         
-        // Set background color based on completion status
-        if (course.completed) {
-            courseCard.style.backgroundColor = '#d4edda'; // Green for completed
-        } else {
-            courseCard.style.backgroundColor = '#f8d7da'; // Red for incomplete
-        }
-
-        // Create course details
-        courseCard.innerHTML = `
-            <h3>${course.title}</h3>
-            <p><strong>Subject:</strong> ${course.subject} ${course.number}</p>
-            <p><strong>Credits:</strong> ${course.credits}</p>
-            <p><strong>Certificate:</strong> ${course.certificate}</p>
-            <p><strong>Description:</strong> ${course.description}</p>
-            <p><strong>Technology:</strong> ${course.technology.join(', ')}</p>
+        // Create member details
+        memberCard.innerHTML = `
+            <img src="${member.image}" alt="${member.name}" class="member-image">
+            <h3>${member.name}</h3>
+            <p><strong>Address:</strong> ${member.address}</p>
+            <p><strong>Phone:</strong> ${member.phone}</p>
+            <p><strong>Website:</strong> <a href="${member.website}" target="_blank">${member.website}</a></p>
+            <p><strong>Membership Level:</strong> ${member.membership_level}</p>
         `;
 
-        totalCredits += course.credits;
-        courseContainer.appendChild(courseCard);
+        memberContainer.appendChild(memberCard);
     });
-
-    // Update total credits
-    document.getElementById('totalCredits').textContent = `Total Credits: ${totalCredits}`;
 }
 
-// Call the displayCourses function to initially populate the course list
+// Call the displayMembers function to initially populate the member list
 document.addEventListener('DOMContentLoaded', () => {
-    displayCourses(courses);
+    displayMembers(members);
 
-    // Filter buttons
-    const filterButtons = document.querySelectorAll('.filter-btn');
-    filterButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            const filteredCourses = courses.filter(course => {
-                if (button.dataset.filter === 'completed') {
-                    return course.completed;
-                } else if (button.dataset.filter === 'incomplete') {
-                    return !course.completed;
-                } else {
-                    return true;
-                }
-            });
-            displayCourses(filteredCourses);
-        });
+    // Toggle between grid and list view
+    document.getElementById('grid-view').addEventListener('click', () => {
+        document.getElementById('directory-list').classList.add('grid-view');
+        document.getElementById('directory-list').classList.remove('list-view');
     });
-});
 
-// Responsive navigation (Hamburger menu)
-const nav = document.querySelector('nav');
-const menuToggle = document.createElement('button');
-menuToggle.textContent = '☰';
-nav.prepend(menuToggle);
-
-menuToggle.addEventListener('click', () => {
-    nav.querySelector('ul').classList.toggle('show');
+    document.getElementById('list-view').addEventListener('click', () => {
+        document.getElementById('directory-list').classList.add('list-view');
+        document.getElementById('directory-list').classList.remove('grid-view');
+    });
 });
