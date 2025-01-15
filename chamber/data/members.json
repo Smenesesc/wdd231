@@ -1,9 +1,9 @@
 [
     {
-        "name": "ABC Enterprises",
-        "address": "123 Main St, Timbuktu",
+        "name": "Westernacher Cosnulting",
+        "address": "Escazu Corporate Center",
         "phone": "(123) 456-7890",
-        "website": "http://abc.com",
+        "website": "https://westernacher.com",
         "image": "abc-enterprises.jpg",
         "membership_level": "1"
     },
@@ -15,6 +15,38 @@
         "image": "xyz-corp.jpg",
         "membership_level": "2"
     },
+    {
+        "name": "Timbuktu Café",
+        "address": "789 Pine St, Timbuktu",
+        "phone": "(123) 111-2222",
+        "website": "http://timbuktucafe.com",
+        "image": "timbuktu-cafe.jpg",
+        "membership_level": "3"
+    }
+    {
+        "name": "Timbuktu Café",
+        "address": "789 Pine St, Timbuktu",
+        "phone": "(123) 111-2222",
+        "website": "http://timbuktucafe.com",
+        "image": "timbuktu-cafe.jpg",
+        "membership_level": "3"
+    }
+    {
+        "name": "Timbuktu Café",
+        "address": "789 Pine St, Timbuktu",
+        "phone": "(123) 111-2222",
+        "website": "http://timbuktucafe.com",
+        "image": "timbuktu-cafe.jpg",
+        "membership_level": "3"
+    }
+    {
+        "name": "Timbuktu Café",
+        "address": "789 Pine St, Timbuktu",
+        "phone": "(123) 111-2222",
+        "website": "http://timbuktucafe.com",
+        "image": "timbuktu-cafe.jpg",
+        "membership_level": "3"
+    }
     {
         "name": "Timbuktu Café",
         "address": "789 Pine St, Timbuktu",
