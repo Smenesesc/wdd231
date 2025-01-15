@@ -4,7 +4,7 @@
         "address": "Escazu Corporate Center",
         "phone": "(123) 456-7890",
         "website": "https://westernacher.com",
-        "image": "westernacher-consulting.jpg",
+        "image": "westernacher.png",
         "membership_level": "1"
     },
     {
@@ -12,15 +12,15 @@
         "address": "410 Terry Ave N, Seattle, WA 98109",
         "phone": "(888) 280-4331",
         "website": "https://amazon.com",
-        "image": "amazon.jpg",
+        "image": "amazon.jpeg",
         "membership_level": "2"
     },
     {
-        "name": "Microsoft",
-        "address": "1 Microsoft Way, Redmond, WA 98052",
-        "phone": "(425) 882-8080",
-        "website": "https://microsoft.com",
-        "image": "microsoft.jpg",
+        "name": "Intel",
+        "address": "2200 Mission College Blvd, Santa Clara, CA 95054",
+        "phone": "(408) 765-8080",
+        "website": "https://intel.com",
+        "image": "intel.jpg",
         "membership_level": "3"
     },
     {
@@ -28,7 +28,7 @@
         "address": "1775 Tysons Blvd, Tysons, VA 22102",
         "phone": "(800) 927-0303",
         "website": "https://dxc.com",
-        "image": "dxc-technology.jpg",
+        "image": "dxc.png",
         "membership_level": "3"
     },
     {
@@ -36,7 +36,7 @@
         "address": "1 Grand Canal Square, Dublin, Ireland",
         "phone": "(800) 336-1221",
         "website": "https://accenture.com",
-        "image": "accenture.jpg",
+        "image": "accenture.png",
         "membership_level": "2"
     },
     {
@@ -44,7 +44,7 @@
         "address": "1 New Orchard Rd, Armonk, NY 10504",
         "phone": "(800) 426-4968",
         "website": "https://ibm.com",
-        "image": "ibm.jpg",
+        "image": "IBM.PNG",
         "membership_level": "1"
     },
     {
@@ -52,7 +52,7 @@
         "address": "3M Center, St. Paul, MN 55144",
         "phone": "(800) 364-3577",
         "website": "https://3m.com",
-        "image": "3m.jpg",
+        "image": "3M.PNG",
         "membership_level": "2"
     }
 ]
