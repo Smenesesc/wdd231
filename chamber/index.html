@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lehi Chamber of Commerce">
+    <meta name="author" content="Santiago Meneses">
+    <meta property="og:title" content="Lehi Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://smenesesc.github.io/wdd231/chamber/index.html">
+    <meta property="og:image" content="https://smenesesc.github.io/wdd231/chamber/images/hero-image.jpg">
+    <title>Lehi - Chamber of Commerce</title>
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Lehi Chamber of Commerce</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Image -->
+        <section id="hero">
+            <img src="images/hero-image.jpg" alt="Lehi City" id="hero-img">
+            <div id="cta">
+                <a href="join.html" class="cta-btn">Join the Chamber</a>
+            </div>
+        </section>
+
+        <!-- Current Events Section -->
+        <section id="events">
+            <h2>Current Events</h2>
+            <div class="event-list">
+                <div class="event">
+                    <h3>Business Networking Lunch</h3>
+                    <p>Join us for a networking event at the local diner. Meet new businesses!</p>
+                </div>
+                <div class="event">
+                    <h3>Community Workshop</h3>
+                    <p>Learn about marketing strategies for small businesses. RSVP today!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Weather Section -->
+        <section id="weather">
+            <h2>Current Weather</h2>
+            <div id="weather-info">
+                <p>Loading weather...</p>
+            </div>
+        </section>
+
+        <!-- Company Spotlights -->
+        <section id="spotlights">
+            <h2>Business Spotlights</h2>
+            <div id="spotlight-container"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Lehi Chamber of Commerce | Last modified: <span id="last-modified"></span></p>
+        <p>Santiago Meneses | WDD 231</p>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>
