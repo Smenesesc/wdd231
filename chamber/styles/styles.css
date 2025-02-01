@@ -1,3 +1,6 @@
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+
 /* General Body Styles */
 body {
     font-family: 'Roboto', sans-serif;
@@ -171,3 +174,4 @@ footer p {
         width: 100%;
     }
 }
+
