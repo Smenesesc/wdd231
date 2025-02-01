@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Thank You for Joining Lehi Chamber of Commerce">
+    <meta name="description" content="Lehi Chamber of Commerce - Thank You">
     <meta name="author" content="Santiago Meneses">
-    <title>Thank You for Joining</title>
+    <title>Thank You for Joining!</title>
     <link rel="icon" href="images/favicon.ico">
     <link rel="stylesheet" href="styles/styles.css">
 </head>
@@ -22,15 +22,17 @@
     </header>
 
     <main>
-        <h2>Thank You for Your Application</h2>
-        <p>Thank you for submitting your membership application. Below are the details you provided:</p>
-        
-        <p><strong>First Name:</strong> <span id="first-name"></span></p>
-        <p><strong>Last Name:</strong> <span id="last-name"></span></p>
-        <p><strong>Email:</strong> <span id="email"></span></p>
-        <p><strong>Mobile Phone:</strong> <span id="phone"></span></p>
-        <p><strong>Organization Name:</strong> <span id="org-name"></span></p>
-        <p><strong>Timestamp:</strong> <span id="timestamp"></span></p>
+        <h2>Thank You for Joining!</h2>
+        <p>Thank you for your membership application. Below are your details:</p>
+
+        <ul>
+            <li><strong>First Name:</strong> <span id="first-name"></span></li>
+            <li><strong>Last Name:</strong> <span id="last-name"></span></li>
+            <li><strong>Email:</strong> <span id="email"></span></li>
+            <li><strong>Phone:</strong> <span id="phone"></span></li>
+            <li><strong>Organization Name:</strong> <span id="org-name"></span></li>
+            <li><strong>Timestamp:</strong> <span id="timestamp"></span></li>
+        </ul>
     </main>
 
     <footer>
@@ -40,18 +42,14 @@
 
     <script src="scripts/script.js"></script>
     <script>
-        const params = new URLSearchParams(window.location.search);
-
-        document.getElementById('first-name').textContent = params.get('first-name');
-        document.getElementById('last-name').textContent = params.get('last-name');
-        document.getElementById('email').textContent = params.get('email');
-        document.getElementById('phone').textContent = params.get('phone');
-        document.getElementById('org-name').textContent = params.get('org-name');
-        document.getElementById('timestamp').textContent = params.get('timestamp');
-
-        document.getElementById('year').textContent = new Date().getFullYear();
-        document.getElementById('last-modified').textContent = document.lastModified;
+        // Getting query parameters from URL
+        const urlParams = new URLSearchParams(window.location.search);
+        document.getElementById('first-name').innerText = urlParams.get('first-name');
+        document.getElementById('last-name').innerText = urlParams.get('last-name');
+        document.getElementById('email').innerText = urlParams.get('email');
+        document.getElementById('phone').innerText = urlParams.get('phone');
+        document.getElementById('org-name').innerText = urlParams.get('org-name');
+        document.getElementById('timestamp').innerText = urlParams.get('timestamp');
     </script>
 </body>
 </html>
-
