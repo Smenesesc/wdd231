@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Thank You for Joining Lehi Chamber of Commerce">
+    <meta name="author" content="Santiago Meneses">
+    <title>Thank You for Joining</title>
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Lehi Chamber of Commerce</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Thank You for Your Application</h2>
+        <p>Thank you for submitting your membership application. Below are the details you provided:</p>
+        
+        <p><strong>First Name:</strong> <span id="first-name"></span></p>
+        <p><strong>Last Name:</strong> <span id="last-name"></span></p>
+        <p><strong>Email:</strong> <span id="email"></span></p>
+        <p><strong>Mobile Phone:</strong> <span id="phone"></span></p>
+        <p><strong>Organization Name:</strong> <span id="org-name"></span></p>
+        <p><strong>Timestamp:</strong> <span id="timestamp"></span></p>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Lehi Chamber of Commerce | Last modified: <span id="last-modified"></span></p>
+        <p>Santiago Meneses | WDD 231</p>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+    <script>
+        const params = new URLSearchParams(window.location.search);
+
+        document.getElementById('first-name').textContent = params.get('first-name');
+        document.getElementById('last-name').textContent = params.get('last-name');
+        document.getElementById('email').textContent = params.get('email');
+        document.getElementById('phone').textContent = params.get('phone');
+        document.getElementById('org-name').textContent = params.get('org-name');
+        document.getElementById('timestamp').textContent = params.get('timestamp');
+
+        document.getElementById('year').textContent = new Date().getFullYear();
+        document.getElementById('last-modified').textContent = document.lastModified;
+    </script>
+</body>
+</html>
+
