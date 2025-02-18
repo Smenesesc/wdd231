@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="Learn more about Tank Surf and our mission to bring the best surfing content and equipment to the world.">
+    <meta name="description" content="Tank Surf - About Us">
+    <meta name="author" content="Your Name">
+    <meta property="og:title" content="Tank Surf - About Us">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://your-website-url/about.html">
+    <meta property="og:image" content="images/hero-image.jpg">
     <title>Tank Surf - About Us</title>
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
-
 <body>
     <header>
+        <h1>Tank Surf</h1>
         <nav>
-            <a href="#" class="logo">Tank Surf</a>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="boards.html">Boards</a></li>
@@ -24,25 +26,34 @@
     </header>
 
     <main>
+        <!-- Hero Image -->
+        <section id="hero">
+            <img src="images/hero-image.jpg" alt="Tank Surf - Surfing Adventure" id="hero-img">
+            <div id="cta">
+                <a href="boards.html" class="cta-btn">Shop Surfboards</a>
+            </div>
+        </section>
+
+        <!-- About Tank Surf Section -->
         <section id="about">
-            <h1>About Tank Surf</h1>
-            <p>Welcome to Tank Surf! We're a passionate team of surfers and enthusiasts dedicated to sharing everything you need to know about surfing. Whether you're a first-timer or an experienced rider, our goal is to provide you with the best gear, tips, and news to help you ride the waves like a pro!</p>
-            
-            <h2>Our Mission</h2>
-            <p>At Tank Surf, we believe that surfing is more than just a sport—it's a lifestyle. We aim to empower surfers of all levels with the resources and knowledge they need to make the most of their time on the water. Our content is designed to educate, inspire, and equip you with everything from surfboard recommendations to practical tutorials and up-to-date surf news.</p>
-            
-            <h2>Our Team</h2>
-            <p>Tank Surf was founded by a group of surfing enthusiasts who are passionate about the ocean and sharing the joys of surfing with the world. With years of experience in the water, our team is dedicated to helping you become the best surfer you can be!</p>
-            
-            <h2>Contact Us</h2>
-            <p>If you have any questions, feedback, or just want to talk surfing, feel free to reach out to us. We're here to help!</p>
+            <h2>About Tank Surf</h2>
+            <p>Tank Surf was founded to bring the best surfing experience to enthusiasts of all levels. Whether you're a beginner or a seasoned pro, we have everything you need to succeed on the waves.</p>
+        </section>
+
+        <!-- Images of Surfing Fun -->
+        <section id="surfing-images">
+            <h2>Surfing in Action</h2>
+            <div class="image-gallery">
+                <img src="images/surfing1.jpg" alt="Surfer Catching a Wave">
+                <img src="images/surfing2.jpg" alt="Surfer on the Beach">
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 Tank Surf. All rights reserved.</p>
+        <p>&copy; 2025 Tank Surf | Last modified: <span id="last-modified"></span></p>
     </footer>
+
+    <script src="scripts/script.js"></script>
 </body>
-
 </html>
-

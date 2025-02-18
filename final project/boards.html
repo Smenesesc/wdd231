@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="Tank Surf - Surfboards and Gear">
+    <meta name="description" content="Tank Surf - Browse Surfboards">
+    <meta name="author" content="Your Name">
+    <meta property="og:title" content="Tank Surf - Surfboards">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://your-website-url/boards.html">
+    <meta property="og:image" content="images/hero-image.jpg">
     <title>Tank Surf - Surfboards</title>
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
-
 <body>
     <header>
+        <h1>Tank Surf</h1>
         <nav>
-            <a href="#" class="logo">Tank Surf</a>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="boards.html">Boards</a></li>
@@ -24,16 +26,38 @@
     </header>
 
     <main>
-        <section id="boards">
-            <h1>Featured Surfboards</h1>
-            <p>Check out our selection of top-rated surfboards for surfers of all levels!</p>
-            <div id="board-list"></div>
+        <!-- Hero Image -->
+        <section id="hero">
+            <img src="images/hero-image.jpg" alt="Surfboards in the Water" id="hero-img">
+            <div id="cta">
+                <a href="about.html" class="cta-btn">Learn More About Us</a>
+            </div>
+        </section>
+
+        <!-- Featured Surfboards -->
+        <section id="featured-boards">
+            <h2>Explore Our Surfboards</h2>
+            <div class="board-list">
+                <div class="board">
+                    <img src="images/surfboard1.jpg" alt="Surfboard 1">
+                    <p>Classic Longboard</p>
+                </div>
+                <div class="board">
+                    <img src="images/surfboard2.jpg" alt="Surfboard 2">
+                    <p>Shortboard Pro</p>
+                </div>
+                <div class="board">
+                    <img src="images/surfboard3.jpg" alt="Surfboard 3">
+                    <p>Fish Surfboard</p>
+                </div>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 Tank Surf. All rights reserved.</p>
+        <p>&copy; 2025 Tank Surf | Last modified: <span id="last-modified"></span></p>
     </footer>
-</body>
 
+    <script src="scripts/script.js"></script>
+</body>
 </html>
