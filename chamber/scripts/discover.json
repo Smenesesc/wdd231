@@ -1,0 +1,50 @@
+[
+    {
+        "name": "Lehi Historical Museum",
+        "address": "123 Main St, Lehi, UT",
+        "description": "Explore the history of Lehi with artifacts and exhibits.",
+        "image": "images/discover/lehi-museum.webp"
+    },
+    {
+        "name": "Tibble Fork Reservoir",
+        "address": "Tibble Fork Rd, Lehi, UT",
+        "description": "A beautiful spot for fishing, picnicking, and hiking.",
+        "image": "images/discover/tibble-fork.webp"
+    },
+    {
+        "name": "Lehi City Park",
+        "address": "456 Park Ave, Lehi, UT",
+        "description": "A spacious park with playgrounds and sports fields.",
+        "image": "images/discover/lehi-park.webp"
+    },
+    {
+        "name": "Cabela's",
+        "address": "789 Outdoor Way, Lehi, UT",
+        "description": "The ultimate outdoor store for gear and adventure.",
+        "image": "images/discover/cabelas.webp"
+    },
+    {
+        "name": "Thanksgiving Point",
+        "address": "3003 N Thanksgiving Way, Lehi, UT",
+        "description": "A family-friendly destination with gardens, museums, and events.",
+        "image": "images/discover/thanksgiving-point.webp"
+    },
+    {
+        "name": "Lehi Roller Mills",
+        "address": "832 E 1200 S, Lehi, UT",
+        "description": "Visit the famous Lehi Roller Mills for local products and tours.",
+        "image": "images/discover/roller-mills.webp"
+    },
+    {
+        "name": "Utah Valley University",
+        "address": "800 W University Parkway, Orem, UT",
+        "description": "A nearby university offering various academic programs.",
+        "image": "images/discover/uvu.webp"
+    },
+    {
+        "name": "The Outlets at Traverse Mountain",
+        "address": "3700 N Cabela's Blvd, Lehi, UT",
+        "description": "Shop at outlet stores with beautiful mountain views.",
+        "image": "images/discover/outlets.webp"
+    }
+]
